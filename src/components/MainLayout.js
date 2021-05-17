@@ -1,4 +1,5 @@
-import React,{useState} from 'react';
+import React,{useState, Component} from 'react';
+import {Link} from 'react-scroll';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
@@ -44,7 +45,8 @@ const MainLayout=({children}) =>{
               Home
             </Menu.Item>
             <Menu.Item key="2" icon={<UserOutlined className="inlineIcon"/>}>
-              About
+              <Link  to="about" spy={true} smooth={true}>About</Link>
+             
             </Menu.Item>
             <Menu.Item key="3" icon={<FileOutlined className="inlineIcon"/>}>
              Resume
@@ -76,7 +78,7 @@ const MainLayout=({children}) =>{
             style={{
               margin: '0px 0px',
               padding: 0,
-              minHeight: "00vh",
+              minHeight: "100vh",
             }}
           >
             {children}

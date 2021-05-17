@@ -1,10 +1,11 @@
 
 import React from 'react';
 import './index.css';
+import {Card} from 'antd'
 
 const ResumeComponent=()=>{
     return (
-        <div className="Resume-container">
+        <Card className="Resume-container">
             <div className="intro-content">
         <h1> Resume </h1>
         <hr/> 
@@ -64,7 +65,7 @@ const ResumeComponent=()=>{
                 </div>
                 </div>
                 </div>
-        </div>
+        </Card>
 
     );
 };
