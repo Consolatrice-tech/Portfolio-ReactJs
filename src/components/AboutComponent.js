@@ -2,6 +2,7 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
 import passportPic from "../assets/BYIR.jpeg";
+import {Card} from 'antd';
 import { Divider, Row, Col, Progress } from 'antd';
 import {
     SmileOutlined,
@@ -13,8 +14,8 @@ import {
 
 const AboutComponent=()=>{
     return(
-    <div className="about-container"> 
-    <div className="Intro-content">
+    <Card className="about-container"> 
+    <div className="intro-content">
         <h1> About </h1>
         <hr/>
         <p className="about-paragraph">I am a full stack developper.Not only that I did it. But it's my passion.
@@ -101,7 +102,7 @@ const AboutComponent=()=>{
   </div>
         </div>
  </div>
-    </div>
+    </Card>
     );
 }
 export default AboutComponent;

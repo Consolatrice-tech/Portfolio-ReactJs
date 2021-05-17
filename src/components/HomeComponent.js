@@ -1,11 +1,12 @@
 import React from "react";
 import "./index.css";
+import {Card} from 'antd';
 import Typewriter from 'typewriter-effect';
 
 
 const HomeComponent = () => {
   return (
-    <div className="home-container">
+    <Card className="home-container">
       <div className="home-content"> 
       BYIRINGIRO Consolatrice 
       <p >I'm</p>
@@ -20,7 +21,7 @@ const HomeComponent = () => {
       />
       </div>
       </div>
-    </div>
+    </Card>
   );
 };
 export default HomeComponent;

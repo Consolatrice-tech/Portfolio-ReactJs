@@ -25,7 +25,7 @@ const MainLayout=({children}) =>{
   
     return (
       <Layout>
-        <Sider trigger={null} collapsible collapsed={collapsed} width="40vh" style={{minHeight: "200vh"}}>
+        <Sider trigger={null} collapsible collapsed={collapsed} width="40vh" style={{minHeight: "200vh", position:"fixed"}}>
 
           <img src ={image1} alt="logo" className="logo" />
           <h1 className=" headerName">  Consolatrice BYIRINGIRO </h1>
@@ -74,9 +74,9 @@ const MainLayout=({children}) =>{
           <Content
             className="site-layout-background"
             style={{
-              margin: '0px 3px',
+              margin: '0px 0px',
               padding: 0,
-              minHeight: "100vh",
+              minHeight: "00vh",
             }}
           >
             {children}

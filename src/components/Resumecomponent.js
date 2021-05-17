@@ -5,6 +5,7 @@ import './index.css';
 const ResumeComponent=()=>{
     return (
         <div className="Resume-container">
+            <div className="intro-content">
         <h1> Resume </h1>
         <hr/> 
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
@@ -60,6 +61,7 @@ const ResumeComponent=()=>{
                     <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
                     <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
                 </ul>
+                </div>
                 </div>
                 </div>
         </div>
