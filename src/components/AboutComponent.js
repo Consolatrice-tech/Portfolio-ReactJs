@@ -14,7 +14,7 @@ import {
 const AboutComponent=()=>{
     return(
     <div className="about-container"> 
-    <div>
+    <div className="Intro-content">
         <h1> About </h1>
         <hr/>
         <p className="about-paragraph">I am a full stack developper.Not only that I did it. But it's my passion.
