@@ -5,7 +5,7 @@ import {Card} from 'antd'
 
 const ResumeComponent=()=>{
     return (
-        <Card className="Resume-container">
+        <Card className="Resume-container" id="resume">
             <div className="intro-content">
         <h1> Resume </h1>
         <hr/> 

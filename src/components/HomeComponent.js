@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 const HomeComponent = () => {
   return (
-    <Card className="home-container">
+    <Card className="home-container" id="home">
       <div className="home-content"> 
       BYIRINGIRO Consolatrice 
       <p >I'm</p>
