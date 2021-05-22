@@ -1,4 +1,5 @@
-import React,{useState} from 'react';
+import React,{useState, Component} from 'react';
+import {Link} from 'react-scroll';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
@@ -16,7 +17,7 @@ import {
   UserOutlined,
   BarsOutlined 
 } from '@ant-design/icons';
-const { Header, Sider, Content } = Layout;
+const { Sider, Content } = Layout;
 const MainLayout=({children}) =>{
  const [collapsed,setCollapsed]= useState(false)
   const toggle = () => {
@@ -31,7 +32,7 @@ const MainLayout=({children}) =>{
           <h1 className=" headerName">  Consolatrice BYIRINGIRO </h1>
           <div className="socialMediaAllIcon">
             <menu theme="dark" mode="horizontal" defaultSelectedKeys={['0']}>
-              <GithubOutlined className="socialMediaIcon"/>
+            <GithubOutlined className="socialMediaIcon"/>
             <LinkedinFilled className="socialMediaIcon"/>
             <TwitterOutlined className="socialMediaIcon" />
             <SlackSquareOutlined className="socialMediaIcon" />
@@ -39,21 +40,21 @@ const MainLayout=({children}) =>{
             </div>
 
         <div >
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={['0']}>
             <Menu.Item key="1" icon={<HomeOutlined className="inlineIcon"/>}>
-              Home
+             <Link  to="home" spy={true} smooth={true}>Home</Link>
             </Menu.Item>
             <Menu.Item key="2" icon={<UserOutlined className="inlineIcon"/>}>
-              About
+              <Link  to="about" spy={true} smooth={true}>About</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={<FileOutlined className="inlineIcon"/>}>
-             Resume
+             <Link  to="resume" spy={true} smooth={true}>Resume</Link> 
             </Menu.Item>
             <Menu.Item key="4" icon={<LayoutOutlined className="inlineIcon"/>}>
-             Portfolio
+             <Link  to="portfolio" spy={true} smooth={true}>Portfolio</Link>
             </Menu.Item>
             <Menu.Item key="5" icon={<BarsOutlined className="inlineIcon"/>}>
-             service
+             <Link  to="service" spy={true} smooth={true}>Service</Link>
             </Menu.Item>
           </Menu>
           </div>
@@ -76,7 +77,7 @@ const MainLayout=({children}) =>{
             style={{
               margin: '0px 0px',
               padding: 0,
-              minHeight: "00vh",
+              minHeight: "100vh",
             }}
           >
             {children}

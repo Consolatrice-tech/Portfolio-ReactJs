@@ -14,7 +14,7 @@ import {
 
 const AboutComponent=()=>{
     return(
-    <Card className="about-container"> 
+    <Card className="about-container" id="about"> 
     <div className="intro-content">
         <h1> About </h1>
         <hr/>
@@ -66,7 +66,7 @@ const AboutComponent=()=>{
       <p>Happy Clients  </p></Col>
       <Col span={4} className="numbers"><CarryOutOutlined className="emoji"/>534
       <p>Projects </p></Col>
-      <Col span={4} className="numbers"><TeamOutlined className="emoji" />9123
+      <Col span={4} className="numbers"><TeamOutlined className="emoji" />912
       <p>Hours Of Support </p></Col>
       <Col span={4} className="numbers"><UserOutlined className="emoji" />94
       <p>Hard Workers</p></Col>
