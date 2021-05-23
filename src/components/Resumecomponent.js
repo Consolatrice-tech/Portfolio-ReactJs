@@ -15,11 +15,10 @@ const ResumeComponent=()=>{
                   <div className="row">
             <div classname="col1">
                <h2>Summary</h2>     
-                   <h3>ALEX SMITH</h3>
-                   <p>Innovative and deadline-driven Graphic Designer with 3+ years
-                        of experience designing and developing user-centered digital/print marketing material from initial 
-                        concept to final, 
-                       polished deliverable.</p>
+                   <h3>BYIRINGIRO Consolatrice</h3>
+                   <p>More than 3 years experience on programming and corporate security system institution through 
+                       training and working on IT projects with various companies.
+                        With 3 years in leadership managing a cyber- security institute that I initiated.</p>
                        
                        <ul>
                         <li> Portland par 127,Orlando, FL</li>
